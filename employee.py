@@ -27,7 +27,8 @@ class SalaryEmployee(Employee):
         return total_pay
 
     def __str__(self):
-        return f"{self.name} works on a monthly salary of {self.monthly_salary}. Their total pay is {self.total_pay}"
+        return f"{self.name} works on a monthly salary of {self.monthly_salary}.  Their total pay is {self.get_pay}."
+
 
 
 class HourlyEmployee(Employee):
